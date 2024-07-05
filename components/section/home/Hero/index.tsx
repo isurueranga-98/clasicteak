@@ -1,7 +1,6 @@
 "use client"
 import { FC, useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import img1 from "@/public/img1.png";
 import img2 from "@/public/img2.png";
 import img3 from "@/public/img1.png";
@@ -40,11 +39,13 @@ const HeroSection: FC = () => {
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#353A4F] to-transparent flex items-center">
-          <div id="1" className="pl-10 text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl flex flex-col">
-            <p className="text-white">We Provide Comfort</p>
-            <p className="text-white">to Your Doorstep</p>
-            <div className="text-sm py-5">
-              <Button text="Explore" behavior="link" href="/" />
+          <div id="1" className="flex flex-col justify-center pl-10 text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl h-full">
+            <div className="space-y-4">
+              <p className="text-white">We Provide Comfort</p>
+              <p className="text-white">to Your Doorstep</p>
+              <div className="text-sm pt-5 md:pt-10 xl:pt-14 2xl:pt-40">
+                <Button text="Explore" behavior="link" href="/" />
+              </div>
             </div>
           </div>
         </div>
