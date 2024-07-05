@@ -22,7 +22,7 @@ const Header: FC = () => {
 
   return (
     <>
-    <header className="flex w-full bg-secondary z-auto items-center justify-center pb-0 py-3">
+    <header className="  flex w-full bg-secondary z-auto items-center justify-center pb-0 py-3">
 
       {/* {Mobile Header} */}
       <div className="flex h-full w-full items-center justify-between lg:hidden">
