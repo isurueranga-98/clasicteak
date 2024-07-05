@@ -23,7 +23,7 @@ const Button: FC<ButtonProps> = (props: ButtonProps) => {
     const { text, callBack  } = props;
     return (
       <button
-        className={`] px-4 py-2  text-white }`}
+        className={`px-4 py-2  text-white }`}
         onClick={callBack}
       >
         {text}
@@ -35,7 +35,7 @@ const Button: FC<ButtonProps> = (props: ButtonProps) => {
     return (
       <Link href={href}>
         <p
-          className={`bg-slate-800 inline-block px-4 py-2 text-white }`}
+          className={`bg-white bg-opacity-30 border-white border inline-block px-4 py-2 text-white }`}
         >
           {text}
         </p>
