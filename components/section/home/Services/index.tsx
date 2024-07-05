@@ -12,7 +12,7 @@ const Services: FC = () => {
 
   return (
     <div className=" w-full h-auto bg-primary px-5 py-5">
-          <div className=" flex  items-center justify-center flex-wrap">
+          <div className=" items-center justify-center flex-wrap hidden lg:flex">
               <div  className=" flex flex-col items-center justify-center text-lg lg:text-xl px-8 py-2 lg:py-5 space-y-4">
                 <MdPayment className=" text-xl lg:text-5xl"/>
                 <p>Secure Payments</p>
