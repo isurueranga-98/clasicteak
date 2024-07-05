@@ -40,12 +40,11 @@ const HeroSection: FC = () => {
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#353A4F] to-transparent flex items-center">
-          <div id="1" className="pl-10 text-2xl sm:text-4xl md:text-5xl lg:text-6xl  xl:text-7xl space-y-1">
-            <p className="text-white">We Provide</p>
-            <p className="text-white">Comfort</p>
+          <div id="1" className="pl-10 text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl flex flex-col">
+            <p className="text-white">We Provide Comfort</p>
             <p className="text-white">to Your Doorstep</p>
-            <div className="text-sm">
-              <Button text="Helo" behavior="link"  href="/"/>
+            <div className="text-sm py-5">
+              <Button text="Explore" behavior="link" href="/" />
             </div>
           </div>
         </div>
