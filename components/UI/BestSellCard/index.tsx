@@ -26,7 +26,7 @@ const BestSellCard: FC<BestSellCardProp> = (props: BestSellCardProp) => {
               objectFit="cover"
               // objectPosition="left"
             />
-          <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+          <div className="absolute bottom-10 xl::bottom-24 left-1/2 transform -translate-x-1/2 translate-y-1/2">
             <Button text="Shop Now" behavior="link" href={props.link}/>
           </div>
       </div>
