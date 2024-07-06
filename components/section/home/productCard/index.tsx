@@ -10,7 +10,7 @@ import Button from "@/components/UI/Button";
 
 const ProductCard: FC = () => {
   return (
-    <div className="w-full flex items-center justify-center md:px-4 lg:px-10 py-7">
+    <div className="w-full flex items-center justify-center md:px-4 lg:px-6 py-6">
       <div className="hidden md:block md:w-1/3 lg:w-2/5 h-auto pr-5">
         <div className="relative h-[416px] lg:h-[516px] w-full">
           <Image
