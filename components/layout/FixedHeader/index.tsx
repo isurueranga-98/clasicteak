@@ -3,7 +3,7 @@ import DropDownNav from "@/components/UI/DropDownNav";
 
 const FixedHeader: FC = () => {
   return (
-    <div className="hidden lg:flex sticky top-0 w-full bg-secondary z-auto items-center justify-center pb-0 py-3 px-10">
+    <div className=" z-50 hidden lg:flex sticky top-0 w-full bg-secondary items-center justify-center pb-0 py-3 px-10">
       <div className="w-3/4 h-auto py-5 text-white flex items-center justify-start space-x-20">
         <DropDownNav name="Home" subLinks={["Sofa", "Modular Sofa", "Chair", "Cofee Table", "Tv Console" , "Slide Stool", "Chaise Lounge"]} />
         <DropDownNav name="Living" subLinks={["Living Sublink 1", "Living Sublink 2"]} />
