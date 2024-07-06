@@ -1,30 +1,40 @@
-"use client";
 import { FC } from "react";
 import Image from "next/image";
-import p1 from "@/public/p1.png"
-import p2 from "@/public/p2.png"
-import p3 from "@/public/p3.png"
-import p4 from "@/public/p4.png"
 import art from "@/public/art.png";
-import Button from "@/components/UI/Button";
-import BestSellCard from "@/components/UI/BestSellCard";
 import ExploreCard from "@/components/UI/ExploreCard";
 
 const ProductCard: FC = () => {
   return (
-    <div className="w-full flex items-center justify-center md:px-4 lg:px-6 py-6">
-      <div className="hidden md:block md:w-1/3 lg:w-2/5 h-auto pr-5">
-        <div className="relative h-[416px] lg:h-[516px] w-full">
+    <div className="w-full flex flex-col md:flex-row items-center justify-center md:px-4 lg:px-6 py-6">
+      <div className="md:w-1/3 lg:w-2/5 h-auto pr-5 md:block hidden">
+      <div className="relative h-full w-full">
+          <Image
+            src={art}
+            layout="responsive"
+            width={1200}
+            height={800}
+            objectFit="cover"
+            alt="art"
+            className="h-auto"
+          />
+        </div>
+      </div>
+
+
+      {/* <div className="md:w-1/3 lg:w-2/5 h-auto pr-5 md:block hidden">
+        <div className="relative h-full w-full">
           <Image
             src={art}
             layout="fill"
             objectFit="cover"
             alt="art"
+            className="h-full"
           />
         </div>
-      </div>
+      </div> */}
 
-      <div className="w-full md:w-3/4 lg:w-3/5 h-auto">
+
+      <div id="1" className="w-full md:w-3/4 lg:w-3/5 h-auto">
         <div className="flex flex-wrap">
           <div className="w-1/2 p-2">
             <div className="relative w-full">
@@ -33,7 +43,7 @@ const ProductCard: FC = () => {
           </div>
 
           <div className="w-1/2 p-2">
-            <div className="relative w-full" >
+            <div className="relative w-full">
               <ExploreCard img="p2.png" link="/" />
             </div>
           </div>
@@ -45,12 +55,14 @@ const ProductCard: FC = () => {
           </div>
 
           <div className="w-1/2 p-2">
-            <div className="relative w-full" >
+            <div className="relative w-full">
               <ExploreCard img="p4.png" link="/" />
             </div>
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 };
