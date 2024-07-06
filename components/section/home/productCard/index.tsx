@@ -8,6 +8,7 @@ import p4 from "@/public/p4.png"
 import art from "@/public/art.png";
 import Button from "@/components/UI/Button";
 import BestSellCard from "@/components/UI/BestSellCard";
+import ExploreCard from "@/components/UI/ExploreCard";
 
 const ProductCard: FC = () => {
   return (
@@ -27,25 +28,25 @@ const ProductCard: FC = () => {
         <div className="flex flex-wrap">
           <div className="w-1/2 p-2">
             <div className="relative w-full">
-              <BestSellCard img="p1.png" link="/" />
+              <ExploreCard img="p1.png" link="/" />
             </div>
           </div>
 
           <div className="w-1/2 p-2">
             <div className="relative w-full" >
-              <BestSellCard img="p2.png" link="/" />
+              <ExploreCard img="p2.png" link="/" />
             </div>
           </div>
 
           <div className="w-1/2 p-2">
             <div className="relative w-full">
-              <BestSellCard img="p3.png" link="/" />
+              <ExploreCard img="p3.png" link="/" />
             </div>
           </div>
 
           <div className="w-1/2 p-2">
             <div className="relative w-full" >
-              <BestSellCard img="p4.png" link="/" />
+              <ExploreCard img="p4.png" link="/" />
             </div>
           </div>
         </div>
