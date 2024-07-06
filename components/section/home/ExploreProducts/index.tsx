@@ -9,7 +9,7 @@ const ExploreProducts: FC = () => {
   return (
     <div className="w-full flex items-center justify-center md:px-4 lg:px-10">
       <div className="hidden md:block md:w-1/2 lg:w-3/5 h-auto">
-        <div className="relative h-[800px] w-full bg-black">
+        <div className="relative h-[400px] w-full bg-black">
           <Image
             src={img3}
             layout="fill"
