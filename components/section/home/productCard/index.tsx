@@ -1,7 +1,10 @@
 "use client";
 import { FC } from "react";
 import Image from "next/image";
-import img3 from "@/public/img3.png";
+import p1 from "@/public/p1.png"
+import p2 from "@/public/p2.png"
+import p3 from "@/public/p3.png"
+import p4 from "@/public/p4.png"
 import art from "@/public/art.png";
 import Button from "@/components/UI/Button";
 
@@ -24,7 +27,7 @@ const ProductCard: FC = () => {
           <div className="w-1/2 p-2">
             <div className="relative h-[200px] lg:h-[250px] w-full">
               <Image
-                src={img3}
+                src={p1}
                 layout="fill"
                 objectFit="cover"
                 alt="img3"
@@ -35,7 +38,7 @@ const ProductCard: FC = () => {
           <div className="w-1/2 p-2">
             <div className="relative h-[200px] lg:h-[250px] w-full">
               <Image
-                src={img3}
+                src={p2}
                 layout="fill"
                 objectFit="cover"
                 alt="img3"
@@ -46,7 +49,7 @@ const ProductCard: FC = () => {
           <div className="w-1/2 p-2">
             <div className="relative h-[200px] lg:h-[250px] w-full">
               <Image
-                src={img3}
+                src={p3}
                 layout="fill"
                 objectFit="cover"
                 alt="img3"
@@ -57,7 +60,7 @@ const ProductCard: FC = () => {
           <div className="w-1/2 p-2">
             <div className="relative h-[200px] lg:h-[250px] w-full">
               <Image
-                src={img3}
+                src={p4}
                 layout="fill"
                 objectFit="cover"
                 alt="img3"
