@@ -18,7 +18,7 @@ type ButtonProps = {
 
 const Button3: FC<ButtonProps> = (props: ButtonProps) => {
   const baseClasses =
-    "relative bg-white text-black w-96 h-10 items-center justify-center text-center flex overflow-hidden group";
+    "relative bg-white text-black w-80 h-10 items-center justify-center text-center flex overflow-hidden group";
   const beforeClasses =
     "absolute inset-0 w-full h-full bg-black transform -translate-x-full transition-transform duration-300 ease-in-out group-hover:translate-x-0";
   const textClasses =

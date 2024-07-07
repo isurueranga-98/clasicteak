@@ -12,7 +12,7 @@ const ContactUs: FC = () => {
         <div id="1" className="flex flex-col items-center justify-center h-full w-full space-y-8">
           <p className="text-white text-4xl">Join Us</p>
           <p className="text-white text-xl font-thin">Sign up for the Newsletter and Receive offers</p>
-          <div className="flex flex-col items-center justify-center w-96 space-y-3">
+          <div className="flex flex-col items-center justify-center w-80 space-y-3">
             <input className="w-full h-12 outline-none px-4" type="text" placeholder="Your Name" />
             <input className="w-full h-12 outline-none px-4" type="email" placeholder="E-mail" />
             <Button3 text="Send" behavior="link" href="/" classname="w-full" />
