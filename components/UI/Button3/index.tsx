@@ -2,10 +2,8 @@ import Link from "next/link";
 import { FC } from "react";
 
 type ButtonProps = {
-
   text: string;
   classname?: string;
-  
 } & (
   | {
       behavior: "button";
@@ -17,14 +15,12 @@ type ButtonProps = {
     }
 );
 
-
-
-const Button: FC<ButtonProps> = (props: ButtonProps) => {
+const Button3: FC<ButtonProps> = (props: ButtonProps) => {
   if (props.behavior === "button") {
-    const { text, callBack  } = props;
+    const { text, callBack } = props;
     return (
       <button
-      className={`bg-black bg-opacity-60 border-white border w-28 inline-block px-4 py-2 text-white items-center justify-center text-center md:w-32 md:text-base xl:w-40 xl:text-xl ${props.classname}}`}
+        className={`bg-black bg-opacity-60 w-full border-white border inline-block px-4 py-2 text-white items-center justify-center text-center md:text-base xl:text-xl ${props.classname}`}
         onClick={callBack}
       >
         {text}
@@ -36,7 +32,7 @@ const Button: FC<ButtonProps> = (props: ButtonProps) => {
     return (
       <Link href={href}>
         <p
-          className={`bg-black bg-opacity-60 border-white border w-28 inline-block px-4 py-2 text-white items-center justify-center text-center md:w-32 md:text-base xl:w-40 xl:text-xl }`}
+          className={``}
         >
           {text}
         </p>
@@ -45,4 +41,7 @@ const Button: FC<ButtonProps> = (props: ButtonProps) => {
   }
 };
 
-export default Button;
+export default Button3;
+
+
+// bg-black bg-opacity-60 w-full border-white border inline-block px-4 py-2 text-white items-center justify-center text-center md:text-base xl:text-xl ${props.classname}

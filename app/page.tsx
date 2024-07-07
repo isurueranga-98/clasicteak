@@ -1,4 +1,6 @@
 import Category from "@/components/section/home/BestSell";
+import ContactUs from "@/components/section/home/Contactus";
+import CustomerReview from "@/components/section/home/CustomerReview";
 import ExploreProducts from "@/components/section/home/ExploreProducts";
 import HeroSection from "@/components/section/home/Hero";
 import ProductCard from "@/components/section/home/productCard";
@@ -13,6 +15,8 @@ export default function Home() {
       <Category/>
       <ExploreProducts/>
       <ProductCard/>
+      {/* <CustomerReview/> */}
+      <ContactUs/>
    </>
   );
 }

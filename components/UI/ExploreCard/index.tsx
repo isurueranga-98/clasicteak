@@ -20,7 +20,7 @@ const ExploreCard: FC<BestSellCardProp> = (props: BestSellCardProp) => {
           height={500}
           objectFit="cover"
         />
-        <div className="absolute bottom-0 items-center bg-secondary justify-center left-0 w-full transform transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+        <div className=" absolute bottom-0 items-center bg-secondary justify-center left-0 w-full transform transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100">
           <Button2 text="Explore Items" behavior="link" href={props.link} />
         </div>
       </div>
