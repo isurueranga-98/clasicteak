@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FC } from "react";
 
+
 type ButtonProps = {
   text: string;
   classname?: string;
@@ -16,14 +17,19 @@ type ButtonProps = {
 );
 
 const Button3: FC<ButtonProps> = (props: ButtonProps) => {
+  const baseClasses =
+    "relative bg-white text-black w-96 h-10 items-center justify-center text-center flex overflow-hidden group";
+  const beforeClasses =
+    "absolute inset-0 w-full h-full bg-black transform -translate-x-full transition-transform duration-300 ease-in-out group-hover:translate-x-0";
+  const textClasses =
+    "relative z-10 transition-colors duration-300 ease-in-out group-hover:text-white";
+
   if (props.behavior === "button") {
     const { text, callBack } = props;
     return (
-      <button
-        className={`bg-black bg-opacity-60 w-full border-white border inline-block px-4 py-2 text-white items-center justify-center text-center md:text-base xl:text-xl ${props.classname}`}
-        onClick={callBack}
-      >
-        {text}
+      <button className={baseClasses} onClick={callBack}>
+        <span className={beforeClasses}></span>
+        <span className={textClasses}>{text}</span>
       </button>
     );
   } else {
@@ -31,10 +37,9 @@ const Button3: FC<ButtonProps> = (props: ButtonProps) => {
 
     return (
       <Link href={href}>
-        <p
-          className={``}
-        >
-          {text}
+        <p className={baseClasses}>
+          <span className={beforeClasses}></span>
+          <span className={textClasses}>{text}</span>
         </p>
       </Link>
     );
@@ -42,6 +47,3 @@ const Button3: FC<ButtonProps> = (props: ButtonProps) => {
 };
 
 export default Button3;
-
-
-// bg-black bg-opacity-60 w-full border-white border inline-block px-4 py-2 text-white items-center justify-center text-center md:text-base xl:text-xl ${props.classname}
