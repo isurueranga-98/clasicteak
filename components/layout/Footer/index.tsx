@@ -12,7 +12,7 @@ const Footer: FC = () => {
   return (
     <div className=" pt-10">
       <div className="w-full h-auto bg-secondary px-5 py-5">
-        <div className="relative w-full h-[1200px] sm:h-[1000px] md:h-[800px] lg:h-[600px] xl:h-[600px]">
+        <div className="relative w-full h-[1400px] sm:h-[1200px] md:h-[1200px] lg:h-[600px] xl:h-[600px] items-center justify-center">
           <div className="relative w-full h-full">
             <Image
               src={art}
@@ -52,62 +52,73 @@ const Footer: FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="items-center justify-center flex flex-wrap gap-14 md:gap-28 lg:gap-14 xl:gap-24 2xl:gap-32">
-                <div className="flex flex-col gap-3">
-                  <p className="font-semibold text-white">Living</p>
-                  <div className="text-white">
-                    <p>Sofa</p>
-                    <p>Coffee Table</p>
-                    <p>Chair</p>
-                    <p>TV Stand</p>
-                    <p>TV Stand</p>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-3">
-                  <p className="font-semibold text-white">Dining</p>
-                  <div className="text-white">
-                    <p>Dining Table</p>
-                    <p>Dining Chair</p>
-                    <p>Dining Table Set</p>
-                    <p>Item 1</p>
-                    <p>Item 2</p>
-                    <p>Item 3</p>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-3">
-                  <p className="font-semibold text-white">Living</p>
-                  <div className="text-white">
-                    <p>Sofa</p>
-                    <p>Coffee Table</p>
-                    <p>Chair</p>
-                    <p>TV Stand</p>
-                    <p>TV Stand</p>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-3">
-                  <p className="font-semibold text-white">Dining</p>
-                  <div className="text-white">
-                    <p>Dining Table</p>
-                    <p>Dining Chair</p>
-                    <p>Dining Table Set</p>
-                    <p>Item 1</p>
-                    <p>Item 2</p>
-                    <p>Item 3</p>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-3">
-                  <p className="font-semibold text-white">Living</p>
-                  <div className="text-white">
-                    <p>Sofa</p>
-                    <p>Coffee Table</p>
-                    <p>Chair</p>
-                    <p>TV Stand</p>
-                    <p>TV Stand</p>
-                  </div>
-                </div>
+
+
+              <div className=" flex flex-col items-center justify-center gap-32 ">
+                      <div className="items-center justify-center flex flex-wrap gap-14 md:gap-28 lg:gap-14 xl:gap-24 2xl:gap-32">
+                        
+                        <div className="flex flex-col gap-3">
+                          <p className="font-semibold text-white">Living</p>
+                          <div className="text-white">
+                            <p>Sofa</p>
+                            <p>Coffee Table</p>
+                            <p>Chair</p>
+                            <p>TV Stand</p>
+                            <p>TV Stand</p>
+                          </div>
+                        </div>
+                        <div className="flex flex-col gap-3">
+                          <p className="font-semibold text-white">Dining</p>
+                          <div className="text-white">
+                            <p>Dining Table</p>
+                            <p>Dining Chair</p>
+                            <p>Dining Table Set</p>
+                            <p>Item 1</p>
+                            <p>Item 2</p>
+                            <p>Item 3</p>
+                          </div>
+                        </div>
+                        <div className="flex flex-col gap-3">
+                          <p className="font-semibold text-white">Living</p>
+                          <div className="text-white">
+                            <p>Sofa</p>
+                            <p>Coffee Table</p>
+                            <p>Chair</p>
+                            <p>TV Stand</p>
+                            <p>TV Stand</p>
+                          </div>
+                        </div>
+                        <div className="flex flex-col gap-3">
+                          <p className="font-semibold text-white">Dining</p>
+                          <div className="text-white">
+                            <p>Dining Table</p>
+                            <p>Dining Chair</p>
+                            <p>Dining Table Set</p>
+                            <p>Item 1</p>
+                            <p>Item 2</p>
+                            <p>Item 3</p>
+                          </div>
+                        </div>
+                        <div className="flex flex-col gap-3">
+                          <p className="font-semibold text-white">Living</p>
+                          <div className="text-white">
+                            <p>Sofa</p>
+                            <p>Coffee Table</p>
+                            <p>Chair</p>
+                            <p>TV Stand</p>
+                            <p>TV Stand</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <p className=" text-white font-thin text-center">Classic Teak Furniture by Chathura .  All Right Recevied | Powerd by IBEXEND</p>
               </div>
+              
+              
             </div>
+            
           </div>
+          
         </div>
       </div>
     </div>
