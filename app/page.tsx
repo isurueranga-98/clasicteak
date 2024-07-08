@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import Category from "@/components/section/home/BestSell";
 import ContactUs from "@/components/section/home/Contactus";
 import CustomerReview from "@/components/section/home/CustomerReview";
@@ -17,6 +18,7 @@ export default function Home() {
       <ProductCard/>
       {/* <CustomerReview/> */}
       <ContactUs/>
+      <Footer/>
    </>
   );
 }
