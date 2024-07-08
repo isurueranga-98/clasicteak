@@ -10,7 +10,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 const Footer: FC = () => {
   return (
-    <div>
+    <div className=" pt-10">
       <div className="w-full h-auto bg-secondary px-5 py-5">
         <div className="relative w-full h-[1200px] sm:h-[1000px] md:h-[800px] lg:h-[600px] xl:h-[600px]">
           <div className="relative w-full h-full">
