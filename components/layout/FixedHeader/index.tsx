@@ -16,7 +16,7 @@ const FixedHeader: FC = () => {
       </div>
 
       <div className=" w-1/4">
-        <h1>hiiii</h1>
+        {/* <h1>hiiii</h1> */}
       </div>
     </div>
   );

@@ -21,18 +21,6 @@ const ProductCard: FC = () => {
       </div>
 
 
-      {/* <div className="md:w-1/3 lg:w-2/5 h-auto pr-5 md:block hidden">
-        <div className="relative h-full w-full">
-          <Image
-            src={art}
-            layout="fill"
-            objectFit="cover"
-            alt="art"
-            className="h-full"
-          />
-        </div>
-      </div> */}
-
 
       <div id="1" className="w-full md:w-3/4 lg:w-3/5 h-auto">
         <div className="flex flex-wrap">
@@ -68,3 +56,9 @@ const ProductCard: FC = () => {
 };
 
 export default ProductCard;
+
+
+
+
+
+
