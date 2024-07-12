@@ -19,7 +19,7 @@ const FCard: FC<FCardProps> = ({ index, imgURL, changeBigFImage, bigFImg }) => {
   };
 
   return (
-    <div className={`border-2 rounded-xl ${bigFImg === imgURL.f ? "border-primary" : "border-transparent"} cursor-pointer max-sm:flex-1`} onClick={handleClick}>
+    <div className={`border-2 ${bigFImg === imgURL.f ? "border-primary" : "border-transparent"} cursor-pointer max-sm:flex-1`} onClick={handleClick}>
       <div className='flex justify-center items-center bg-cover sm:w-36 sm:h-32  max-sm:p-4'>
         <Image
           src={imgURL.thumbnail}
