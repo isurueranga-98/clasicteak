@@ -9,17 +9,11 @@ const Page: FC = () => {
   const [fImg, setFImg] = useState<string>(f1.src);
 
   return (
-    <div>
-      <div className='relative'>
-        <Image
-          src={fImg}
-          alt='furniture collection'
-          width={610}
-          height={502}
-          className='object-contain relative z-10'
-        />
+    <div className=" ">
+      <div className='relative gap-5 flex flex-col-reverse items-center justify-center md:flex-row md:items-start'>
+        
 
-        <div className='flex'>
+        <div className='flex md:flex-col'>
           {furniture.map((image, index) => (
             <div key={index}>
               <FCard
@@ -31,6 +25,14 @@ const Page: FC = () => {
             </div>
           ))}
         </div>
+
+        <Image
+          src={fImg}
+          alt='furniture collection'
+          width={610}
+          height={502}
+          className='object-contain relative z-10'
+        />
       </div>
     </div>
   );
