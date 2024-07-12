@@ -1,41 +1,12 @@
-"use client";
-import { FC, useState } from "react";
-import { furniture } from "@/components/constants/index";
-import FCard from "@/components/UI/ProductCard";
-import f1 from "@/public/f1.png";
-import Image from "next/image";
+import ProductCard from "@/components/UI/ProductCard";
+import { FC } from "react";
 
-const Page: FC = () => {
-  const [fImg, setFImg] = useState<string>(f1.src);
-
-  return (
-    <div className=" ">
-      <div className='relative gap-5 flex flex-col-reverse items-center justify-center md:flex-row md:items-start'>
-        
-
-        <div className='flex md:flex-col'>
-          {furniture.map((image, index) => (
-            <div key={index}>
-              <FCard
-                index={index}
-                imgURL={image}
-                changeBigFImage={(img) => setFImg(img)}
-                bigFImg={fImg}
-              />
-            </div>
-          ))}
-        </div>
-
-        <Image
-          src={fImg}
-          alt='furniture collection'
-          width={610}
-          height={502}
-          className='object-contain relative z-10'
-        />
+const ProductPage: FC = () => {
+    return(
+      <div>
+        <ProductCard/>
       </div>
-    </div>
-  );
-};
+    )
+}
 
-export default Page;
+export default ProductPage;

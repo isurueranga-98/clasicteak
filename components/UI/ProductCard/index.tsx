@@ -1,36 +1,41 @@
-import { FC } from "react";
+"use client";
+import { FC, useState } from "react";
+import { furniture } from "@/components/constants/index";
+import FCard from "@/components/UI/ImageSelector";
+import f1 from "@/public/f1.png";
 import Image from "next/image";
 
-interface FCardProps {
-  index: number;
-  imgURL: {
-    thumbnail: string;
-    f: string;
-  };
-  changeBigFImage: (img: string) => void;
-  bigFImg: string;
-}
-
-const FCard: FC<FCardProps> = ({ index, imgURL, changeBigFImage, bigFImg }) => {
-  const handleClick = () => {
-    if (bigFImg !== imgURL.f) {
-      changeBigFImage(imgURL.f);
-    }
-  };
+const Page: FC = () => {
+  const [fImg, setFImg] = useState<string>(f1.src);
 
   return (
-    <div className={`border-2 ${bigFImg === imgURL.f ? "border-primary" : "border-transparent"} cursor-pointer max-sm:flex-1`} onClick={handleClick}>
-      <div className='flex justify-center items-center bg-cover sm:w-36 sm:h-32  max-sm:p-4'>
+    <div className=" ">
+      <div className='relative gap-5 flex flex-col-reverse items-center md:flex-row md:items-start'>
+        
+
+        <div className='flex md:flex-col'>
+          {furniture.map((image, index) => (
+            <div key={index}>
+              <FCard
+                index={index}
+                imgURL={image}
+                changeBigFImage={(img) => setFImg(img)}
+                bigFImg={fImg}
+              />
+            </div>
+          ))}
+        </div>
+
         <Image
-          src={imgURL.thumbnail}
-          alt={`furniture collection ${index + 1}`}
-          width={127}
-          height={103.34}
-          className='object-contain'
+          src={fImg}
+          alt='furniture collection'
+          width={610}
+          height={502}
+          className='object-contain relative z-10'
         />
       </div>
     </div>
   );
 };
 
-export default FCard;
+export default Page;
