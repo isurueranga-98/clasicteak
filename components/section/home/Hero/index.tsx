@@ -53,7 +53,7 @@ const HeroSection: FC = () => {
               </div>
 
               <div className="text-sm pt-5 md:pt-10 xl:pt-14 2xl:pt-40">
-                <Button text="Explore" behavior="link" href="/" />
+                <Button text="Explore" behavior="link" href="/ProductPage" />
               </div>
             </div>
           </div>
