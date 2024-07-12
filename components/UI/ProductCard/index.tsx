@@ -10,10 +10,10 @@ const Page: FC = () => {
 
   return (
     <div className=" ">
-      <div className='relative gap-5 flex flex-col-reverse items-center md:flex-row md:items-start'>
+      <div className='relative gap-3 md:gap-5 flex flex-col-reverse items-center sm:flex-row sm:items-start'>
         
 
-        <div className='flex md:flex-col'>
+        <div className='flex sm:flex-col'>
           {furniture.map((image, index) => (
             <div key={index}>
               <FCard
