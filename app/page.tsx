@@ -18,7 +18,7 @@ export default function Home() {
       <ProductCard/>
       {/* <CustomerReview/> */}
       <ContactUs/>
-      <Footer/>
+      
    </>
   );
 }
