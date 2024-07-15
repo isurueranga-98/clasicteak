@@ -3,7 +3,8 @@ import { FC } from "react";
 
 const ProductPage: FC = () => {
     return(
-      <div>
+      <div className="">
+        <p>Leyard Sofs</p>
         <ProductCard/>
       </div>
     )
